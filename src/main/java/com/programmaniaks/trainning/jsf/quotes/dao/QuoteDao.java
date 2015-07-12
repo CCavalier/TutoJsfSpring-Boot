@@ -6,7 +6,7 @@ import org.springframework.web.client.RestTemplate;
 import com.programmaniaks.trainning.jsf.quotes.model.Quote;
 
 @Component
-public class QuoteDao implements QuoteLoader {
+public class QuoteDao implements IQuoteLoader {
 
 	@Override
 	public String readRandomQuote(){

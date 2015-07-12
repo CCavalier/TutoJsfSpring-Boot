@@ -3,13 +3,13 @@ package com.programmaniaks.trainning.jsf.quotes.manager;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import com.programmaniaks.trainning.jsf.quotes.dao.QuoteLoader;
+import com.programmaniaks.trainning.jsf.quotes.dao.IQuoteLoader;
 
 @Named
 public class QuoteManager {
 
 	@Inject
-	private QuoteLoader quoteLoader;
+	private IQuoteLoader quoteLoader;
 	
 	
 	public String findRandomQuote(){

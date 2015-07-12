@@ -1,7 +1,7 @@
 package com.programmaniaks.trainning.jsf.quotes.dao;
 
 
-public interface QuoteLoader {
+public interface IQuoteLoader {
 
 	String readRandomQuote();
 

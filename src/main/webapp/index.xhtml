@@ -59,6 +59,19 @@
 					<h:outputText value=" #{loginBean.quote}"/>
 				</rich:panel>
 			</span>
+			
+			<span class="row col-md-8">
+			<rich:panel header="Quote generator" id="connectionPanel">
+					<h:outputText value="User:" rendered="#{userBean.connectedUser eq null}" class="row col-md-6"/>
+					<h:inputText value="#{userBean.name}" rendered="#{userBean.connectedUser eq null}" class="row col-md-6"/>
+					<h:outputText value="Password:" rendered="#{userBean.connectedUser eq null}" class="row col-md-6"/>
+					<h:inputSecret value="#{userBean.password}" rendered="#{userBean.connectedUser eq null}" class="row col-md-6"/>
+					<h:commandButton value="Connect" rendered="#{userBean.connectedUser eq null}" class="row col-md-2"
+						action="#{userBean.connect()}">
+					</h:commandButton>
+					<h:outputText value="Vous etes connecté" rendered="#{userBean.connectedUser ne null}"/>
+				</rich:panel>
+			</span>
 		</h:form>
 	</div>
 
