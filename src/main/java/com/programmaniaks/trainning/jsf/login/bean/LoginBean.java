@@ -40,8 +40,7 @@ public class LoginBean implements Serializable {
 		this.name = name;
 	}
 	
-	public String printRandomQuote(){
+	public void printRandomQuote(){
 		quote = quoteManager.findRandomQuote();
-		return "quote";
 	}
 }
